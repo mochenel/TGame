@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initail-scale = 1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<title>
+		Traversal Game
+	</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../bootstrap/css/font-awesome.min.css">
+<script src="../bootstrap/js/jquery.min.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<!-- <link rel="stylesheet" href="css/game.css"> -->
+</head>
+
+<style>
+	
+	body{
+	font-family: arial;
+}
+#level, #levelNO{
+	color: blue;
+}
+#next-level{
+margin-top: 50px;
+margin-bottom: 50px;
+position: absolute;
+/*width: 200px;
+*/
+}
+#game-board {
+background-color: lightgray;
+border: 1px solid black;
+margin-top:-50px;
+
+}#next{
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+}
+#game-board tr td{
+	border: 1px solid black;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+}
+#game-board tr td img{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+#complete{
+	color: green;
+	text-align: center;
+}
+    #btn-controls {
+        margin: 0px auto;
+        visibility: hidden;
+    }
+
+#left,#right,#down,#up{
+	width:70px;
+	font-family: Arial, sans-serif;
+	
+}
+#inst{
+	margin:-10px;
+}
+</style>
+<body>
+
+
+<h1 id = "levelNo" class="text-center">Level 1</h1>
+<h2 class="text-center"><button id="inst" class="btn btn-info text-center" onclick="instruct()">Instructions</button></h2>
+<h1 id = "level">
+	<button type="submit" id="Start" onclick="loadData('../board/samples1/board_01.txt')" class="btn btn-primary  col-md-8 offset-md-2 ">Start</button>
+</h1>
+
+<div class="row">
+	<div class="col-md-8 offset-md-2">
+		<!-- ajax script to read text file -->
+		<table id="game-board" class="col-md-8 offset-md-2">
+		</table>
+
+	</div>
+</div>
+	<table id="btn-controls" class="text-center">
+
+		<tr>
+			<td></td>
+			<td><button id="up" class="btn btn-primary" onclick="btnUp()">up</button></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><button id="left" class="btn btn-primary" onclick="btnLeft()">left</button></td>
+			<td></td>
+			<td><button id="right" class="btn btn-primary" onclick="btnRight()">right</button></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><button id="down" class="btn btn-primary" onclick="btnDown()">down</button></td>
+			<td></td>
+		</tr>
+	</table>
+
+
+<script src="js/readFile.js"></script>
+
+
+</body>
+</html>

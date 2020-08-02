@@ -1,0 +1,11 @@
+body{
+	font-family: arial;
+}
+#welcome-text{
+	margin-top: 100px;
+}	
+#play-btn{
+	width: 200px;
+	cursor: pointer;
+	font-size: 120%;
+}

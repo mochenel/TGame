@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Traversal Game
+	</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../TGame/bootstrap/css/font-awesome.min.css">
+<script src="../TGame/bootstrap/js/jquery.min.js"></script>
+<script src="../TGame/bootstrap/js/popper.min.js"></script>
+<script src="../TGame/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<style>
+	body{
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	p-img-1 img{
+	width:20px;
+	height:20px;
+	}
+</style>
+<body>
+
+	<!-- main  page -->
+	<h1 class="text-center">Travesal Game Instructions</h1>
+	<div class="container">
+		<h2>
+			The rules of the game
+		</h2>
+		<p>
+			Traversal is played on a rectangular board divided into squares. Some of the squares are empty, <br />
+			while others contain "active" pieces.
+		</p>
+		<p id="p-img-1">
+			<img src="../images/tvl_e.png" /> Empty square<br /><br />
+			<img src="../images/tvl_p0.png" /> Wall, never moves<br /><br />
+			<img src="../images/tvl_s.png" /> Player, moved by the user (keys on the keyboard)<br /><br />
+			<img src="../images/tvl_t.png" /> Target, never moves<br />
+		</p>
+
+		<p>
+			If the player is at the left (or right) edge of the board, moving left (or right) off the board has no <br />
+			effect.In other words, the player cannot move beyond the left and right edge of the board. On the<br />
+			other hand,if the player is at the top (or bottom) edge of the board, moving up (or down) makes<br />
+			the player appear at the other edge.In other words, the player can wrap around the board from<br />
+			the top to the bottom and vice versa.
+		</p>
+		<h2>
+			Switchers
+		</h2>
+		<p>
+			Switchers are active pieces that are either on or off. When they are on, the player is not allowed to<br />
+			move onto them; "touching" them will end the round. When they are off, the player can move over<br />
+			switchers. Switchers toggle between the on/off states based whenever the player moves.<br />
+			Horizontal switchers toggle every time the player makes a horizontal move (either left or right);<br />
+			vertical switchers toggle every time the player makes a vertical move (either up or down).<br />
+		</p>
+
+		<p id="p-img-2">
+			<img src="../images/tvl_sh1.png" /> <img src="../images/tvl_sv1.png" />	Horizontal and vertical switchers in on state<br /><br />
+			<img src="../images/tvl_sh0.png" />	<img src="../images/tvl_sv0.png" />	Horizontal and vertical switchers in off state
+		</p>
+
+		<h2>
+			Keys and ports
+		</h2>
+		<p>
+			Ports are active pieces that are either open or closed. Keys are also active pieces. At the start of <br />
+			a round, all keys are "available": when the player moves over a key, it toggles all of the ports on the <br />
+			board between their open/closed states. In other words, all ports that are open, change to closed; all ports that are closed, <br />
+			change to open. Once a key has toggled the ports, the key becomes <br />
+			unavailable and can never toggle the ports again. The player is not allowed to move onto closed ports;<br />
+			"touching" them will end the round. The player can move onto open ports.
+		</p>
+		<p id="p-img-2">
+
+			<img src="../images/tvl_p1.png" />	Closed port <br /><br />
+			<img src="../images/tvl_p0.png" />Open port<br /><br />
+			<img src="../images/tvl_k1.png" />Available key<br /><br />
+			<img src="../images/tvl_k0.png" />Unavailable key<br /><br />
+		</p>
+		<h2>Walls</h2>
+		<p>Walls remain stationary, "touching" them will end the round.</p>
+	</div>
+</body>
+</html>
