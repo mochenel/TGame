@@ -422,7 +422,7 @@ function down(Matrix) {
 // pressed 4 (left)
 function left(Matrix) {
 	if (Matrix.left.value == null) {
-		alert("null")
+		
 	}
 	else if (nonObstacle.includes(Matrix.left.value)) {
 		var i = parseInt(Matrix.player.row);
@@ -454,7 +454,7 @@ function left(Matrix) {
 // pressed 6 (right)
 function right(Matrix) {
 	if (Matrix.right.value == null) {
-		alert("null")
+		
 	}
 	else if (nonObstacle.includes(Matrix.right.value)) {
 		var i = parseInt(Matrix.player.row);
