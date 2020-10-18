@@ -119,13 +119,13 @@ function nextLevel() {
 		var loc;
 		if(level <= 14){
 
-			 loc = `../board/samples1/board_0${level}.txt`;
+			 loc = `https://github.com/mochenel/TGameConfig/tree/master/public/board/samples1/board_0${level}.txt`;
 			 if(level >= 10){
-			 	loc = `../board/samples1/board_${level}.txt`;
+			 	loc = `https://github.com/mochenel/TGameConfig/tree/master/public/board/samples1/board_${level}.txt`;
 			 }
 		}
 		else if(level > 14 && level < 18 ){
-			loc = `../board/samples2/board_${level}.txt`;
+			loc = `https://github.com/mochenel/TGameConfig/tree/master/public/board/samples2/board_${level}.txt`;
 		}
 		else{
 			document.getElementById("game-board").style.visibility = "hidden";
