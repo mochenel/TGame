@@ -117,16 +117,12 @@ function nextLevel() {
 		level = level+1;
 		document.getElementById("levelNo").innerHTML = `Level ${level}`;
 		var loc;
-		if(level <= 14){
+		if(level < 18){
 
-			 loc = `https://raw.githubusercontent.com/mochenel/TGameConfig/master/public/board/samples1/board_0${level}.txt`;
-			 if(level >= 10){
-			 	loc = `https://raw.githubusercontent.com/mochenel/TGameConfig/master/public/board/samples1/board_${level}.txt`;
-			 }
+			 loc = `https://traversalconfiglevel.herokuapp.com/level?id=${level}`;
+			
 		}
-		else if(level > 14 && level < 18 ){
-			loc = `https://raw.githubusercontent.com/mochenel/TGameConfig/master/public/board/samples2/board_${level}.txt`;
-		}
+		
 		else{
 			document.getElementById("game-board").style.visibility = "hidden";
 			document.getElementById("next-l").style.visibility = "hidden";
