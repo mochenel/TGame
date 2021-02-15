@@ -24,6 +24,8 @@ move onto them; "touching" them will end the round. When they are off, the playe
 switchers. Switchers toggle between the on/off states based whenever the player moves.
 Horizontal switchers toggle every time the player makes a horizontal move (either left or right);
 vertical switchers toggle every time the player makes a vertical move (either up or down).
+
+
   <img src="images/tvl_sh1.png" width="100">  <img src="images/tvl_sv1.png" width="100"> Horizontal and vertical switchers in on state
 
   <img src="images/tvl_sh0.png" width="100">  <img src="images/tvl_sv0.png" width="100"> Horizontal and vertical switchers in off state
