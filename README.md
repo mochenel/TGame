@@ -1,5 +1,6 @@
 # Travesal Game Instructions
-**The rules of the game**
+**The rules of the game.**
+
 **Traversal** is played on a rectangular board divided into squares. Some of the squares are empty,
 while others contain "active" pieces.
 
