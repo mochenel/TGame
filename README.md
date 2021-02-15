@@ -4,7 +4,7 @@
 **Traversal** is played on a rectangular board divided into squares. Some of the squares are empty,
 while others contain "active" pieces.
 
- * Empty square
+ * <img src="images/tvl_e.png" width="100" > Empty square
 
  * Wall, never moves
 
